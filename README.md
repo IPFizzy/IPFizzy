@@ -1,3 +1,11 @@
+<p align="center">
+  <img
+    src="./github-metrics.svg"
+    alt="Keon Bushman's GitHub metrics"
+    width="100%"
+  />
+</p>
+
 # Keon Bushman
 
 ### Software Development Student · IT Professional
