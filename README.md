@@ -190,19 +190,15 @@
   />
 </p>
 
-<details>
-  <summary><strong>GitHub achievements and trophies</strong></summary>
+## GitHub Trophies
 
-  <br />
-
-  <p align="center">
-    <img
-      width="100%"
-      src="https://github-profile-trophy.vercel.app/?username=IPFizzy&theme=darkhub&no-frame=true&no-bg=true&column=6&margin-w=8&margin-h=8"
-      alt="Keon Bushman's GitHub trophies"
-    />
-  </p>
-</details>
+<p align="center">
+  <img
+    width="100%"
+    src="./profile/github-trophies.svg"
+    alt="Keon Bushman's GitHub trophies"
+  />
+</p>
 
 ---
 
