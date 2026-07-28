@@ -67,6 +67,59 @@ jobs:
         run: mkdir -p profile
 
       # ---------------------------------------------------------
+      # Generate and store GitHub trophies locally.
+      # Multiple official-listed mirrors are tried as fallbacks.
+      # ---------------------------------------------------------
+      - name: Generate GitHub trophies
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          TROPHY_QUERY="username=IPFizzy&theme=darkhub&no-frame=true&no-bg=true&column=6&margin-w=8&margin-h=8"
+
+          TROPHY_ENDPOINTS=(
+            "https://github-profile-trophy.vercel.app/"
+            "https://github-profile-trophy-liard-delta.vercel.app/"
+            "https://gh-trophy.cdnsoft.net/"
+            "https://trophy.ryglcloud.net/"
+          )
+
+          generated=false
+
+          for endpoint in "${TROPHY_ENDPOINTS[@]}"; do
+            echo "Trying trophy endpoint: ${endpoint}"
+
+            if curl \
+              --fail \
+              --silent \
+              --show-error \
+              --location \
+              --retry 2 \
+              --retry-delay 3 \
+              --connect-timeout 15 \
+              --max-time 60 \
+              "${endpoint}?${TROPHY_QUERY}" \
+              --output /tmp/github-trophies.svg; then
+
+              if grep -q "<svg" /tmp/github-trophies.svg; then
+                mv /tmp/github-trophies.svg profile/github-trophies.svg
+                echo "GitHub trophies generated successfully."
+                generated=true
+                break
+              fi
+            fi
+          done
+
+          if [ "$generated" = false ]; then
+            if [ -f profile/github-trophies.svg ]; then
+              echo "All trophy endpoints failed. Keeping the existing trophy image."
+            else
+              echo "No trophy image exists and every endpoint failed."
+              exit 1
+            fi
+          fi
+
+      # ---------------------------------------------------------
       # Generate the local GitHub statistics card.
       # ---------------------------------------------------------
       - name: Generate GitHub stats card
