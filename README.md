@@ -139,30 +139,69 @@
 
 ## Featured Work
 
-<p align="center">
-  <a href="https://github.com/IPFizzy/umoja-pamoja-website">
-    <img
-      width="49%"
-      src="./profile/umoja-pamoja.svg"
-      alt="Umoja Pamoja Youth Outreach Website"
-    />
-  </a>
-  <a href="https://github.com/IPFizzy/PcTroubleshooter">
-    <img
-      width="49%"
-      src="./profile/pc-troubleshooter.svg"
-      alt="PC Troubleshooter"
-    />
-  </a>
-</p>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/IPFizzy/umoja-pamoja-website">Umoja Pamoja Youth Outreach</a></h3>
+      <p>
+        Responsive React and TypeScript website concept for a Christian youth
+        outreach in Tanzania, built with Vite and deployed through GitHub Pages.
+      </p>
+      <p>
+        <a href="https://github.com/IPFizzy/umoja-pamoja-website"><strong>Repository</strong></a>
+        &nbsp;·&nbsp;
+        <a href="https://ipfizzy.github.io/umoja-pamoja-website/"><strong>Live Demo</strong></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/IPFizzy/FantasyStorefront">Fantasy Storefront</a></h3>
+      <p>
+        Java storefront with JSON-backed inventory, shopping-cart services,
+        sorting, a loopback-only administration client, Maven, and JUnit tests.
+      </p>
+      <p>
+        <a href="https://github.com/IPFizzy/FantasyStorefront"><strong>Repository</strong></a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+---
+
+## Projects and Repositories
+
+A categorized directory of my finished public work, including larger applications and focused practice projects.
+
+### Applications, Games, and Desktop Software
+
+| Repository | Focus |
+| --- | --- |
+| [FantasyStorefront](https://github.com/IPFizzy/FantasyStorefront) | Java storefront with inventory, cart logic, JSON persistence, local administration service, Maven, and JUnit testing |
+| [Minesweeper](https://github.com/IPFizzy/Minesweeper) | C# Windows Forms Minesweeper game with configurable difficulty, themes, scoring, persistent high scores, and xUnit-tested game logic |
+| [VehicleStore](https://github.com/IPFizzy/VehicleStore) | C# vehicle inventory and storefront demonstrating inheritance, desktop and console clients, persistence, checkout, and tests |
+| [ScriptureVerseManager](https://github.com/IPFizzy/ScriptureVerseManager) | C# Windows Forms Scripture library with validation, search, ranking, LINQ, and multi-format import/export |
+| [PizzaMaker](https://github.com/IPFizzy/PizzaMaker) | C# Windows Forms pizza-ordering application with dynamic pricing, multi-pizza orders, layered design, and text-file export |
+| [WhackAMole](https://github.com/IPFizzy/WhackAMole) | C# Windows Forms reaction game with progressive difficulty, decoys, lives, and persistent high scores |
+| [ChessMoveVisualizer](https://github.com/IPFizzy/ChessMoveVisualizer) | C# GUI and console visualizer for legal movement patterns of five chess pieces on an empty board |
+
+### Algorithms and Focused Utilities
+
+| Repository | Focus |
+| --- | --- |
+| [FloodFillVisualizer](https://github.com/IPFizzy/FloodFillVisualizer) | Animated recursive flood fill across a randomized obstacle grid |
+| [RecursiveNumberReducer](https://github.com/IPFizzy/RecursiveNumberReducer) | Recursive number-reduction exercise with safe termination, branching rules, validation, and call tracing |
+| [FactorialCalculator](https://github.com/IPFizzy/FactorialCalculator) | Iterative and recursive factorial implementations with BigInteger and result verification |
+| [GCDCalculator](https://github.com/IPFizzy/GCDCalculator) | Recursive and iterative Euclidean GCD implementations with step counting and multi-value support |
+| [NameCharacterAnalyzer](https://github.com/IPFizzy/NameCharacterAnalyzer) | Small C# console utility for character-value analysis and input handling |
+
+### Web and Community
+
+| Repository | Focus |
+| --- | --- |
+| [umoja-pamoja-website](https://github.com/IPFizzy/umoja-pamoja-website) | Responsive React and TypeScript outreach website concept with a live GitHub Pages deployment |
 
 <p align="center">
-  <a href="https://ipfizzy.github.io/umoja-pamoja-website/">
-    <img
-      src="https://img.shields.io/badge/View%20Umoja%20Pamoja-Live%20Demo-1F6FEB?style=for-the-badge&logo=githubpages&logoColor=white"
-      alt="View the Umoja Pamoja live demonstration"
-    />
-  </a>
+  <a href="https://github.com/IPFizzy?tab=repositories"><strong>Browse all public repositories →</strong></a>
 </p>
 
 ---
@@ -207,8 +246,8 @@
 - Studying algorithms and data structures
 - Building maintainable C# and Python applications
 - Creating responsive React and TypeScript interfaces
-- Developing PowerShell automation and troubleshooting tools
-- Expanding my systems administration and self-hosting experience
+- Expanding my Java application-development experience
+- Growing my systems administration, automation, and self-hosting skills
 
 ---
 
